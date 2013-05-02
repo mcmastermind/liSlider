@@ -24,6 +24,9 @@
                 $('#' + id).prev('.prevnext').find('a:eq(0)').click(function(){liSliderPrev($('#' + id).prev('.prevnext').find('a:eq(0)'), offset);});
                 $('#' + id).prev('.prevnext').find('a:eq(1)').click(function(){liSliderNext($('#' + id).prev('.prevnext').find('a:eq(1)'), offset, show);});
                 
+                if( $('#' + id + ' li').length <= show ) {
+                    $('#' + id).prev('.prevnext').hide();
+                }
             });
              return this;
              
