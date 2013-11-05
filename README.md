@@ -1,7 +1,7 @@
-liSlider
+liSlider 1.1
 ================================
 
-jQuery based list item carousel like rotator .
+jQuery based list item carousel like rotator.
 
 ##What is liSlider?
 
@@ -45,6 +45,7 @@ Use the following markup for your slider.
 
 ```html
 <div id="liSlider">
+    <div class="prevnext"></div>
     <ul>
         <li>
             List Item Content here
